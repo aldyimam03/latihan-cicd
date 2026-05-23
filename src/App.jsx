@@ -16,7 +16,8 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Halo ini adalah percobaan CICD</h1>
+          <h1>Latihan CI/CD Level 2</h1>
+          <p>Belajar Pull Request workflow dengan GitHub Actions.</p>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>

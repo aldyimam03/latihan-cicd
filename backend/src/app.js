@@ -1,0 +1,15 @@
+import express from 'express'
+
+const app = express()
+
+app.use(express.json())
+
+app.get("/", (req, res) => {
+  res.json({ message: "Backend API CI/CD berhasil" })
+});
+
+app.get("/health", (req, res) => {
+  res.json({ status: "OK" })
+});
+
+export default app

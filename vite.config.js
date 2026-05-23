@@ -5,8 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/latihan-cicd/',
-  // test: {
-  //   include: ['src/**/*.test.js'],
-  //   exclude: ['backend/**', 'node_modules/**', 'dist/**'],
-  // },
-});
+  test: {
+    include: ['src/**/*.{test,spec}.{js,jsx,ts,tsx}'],
+  },
+})

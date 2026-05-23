@@ -35,6 +35,9 @@ jobs:
 
             - name: Build Aplikasi
               run: npm run build
+              env: 
+                VITE_APP_ENV: ${{ secrets.VITE_APP_ENV }}
+                VITE_APP_MESSAGE: ${{ secrets.VITE_APP_MESSAGE }}
 
             - name: Setup Github Pages 
               uses: actions/configure-pages@v5

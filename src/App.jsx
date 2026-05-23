@@ -7,6 +7,9 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const appEnv = import.meta.env.VITE_APP_ENV
+  const message = import.meta.env.VITE_APP_MESSAGE
+
   return (
     <>
       <section id="center">
@@ -16,9 +19,11 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Latihan CI/CD Level 3</h1>
+          <h1>Latihan CI/CD Level 4</h1>
           <p>Belajar Pull Request workflow dengan GitHub Actions.</p>
           <p>Belajar alur dev sebagai staging dan main sebagai production.</p>
+          <p><strong>Environment:</strong> {appEnv}</p>
+          <p><strong>Message:</strong> {message}</p>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>

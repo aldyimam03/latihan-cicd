@@ -6,7 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/latihan-cicd/',
   test: {
-    include: ['src/**/*.test.js'],
-    exclude: ['backend/**', 'node_modules/**', 'dist/**'],
+    include: ['src/**/*.{test,spec}.{js,jsx,ts,tsx}'],
   },
-});
+})
